@@ -21,7 +21,9 @@ services:
     volumes:
      - /srv/video:/var/lib/video
     environment:
-     - TZ=Europe/Berlin
+      - TZ=Europe/Berlin
+      - SVDRP_PORT=6419 
+      - VDRADMIN_PORT=8001
 
 networks:
   hostnet:
